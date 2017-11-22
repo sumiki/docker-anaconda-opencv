@@ -1,5 +1,9 @@
 
-docker run -it 04ff0639b806 python
+## Anaconda Testing
 
-docker run -it -v /Users/mikioshawa/projects/dockerfiles/docker-anaconda-opencv/app:/app 04ff0639b806 python /app/run.py
+Python Console
+docker run -it docker-anaconda-opencv python
 
+
+Run FaceDetect
+docker run -it -v /Users/mikioshawa/projects/dockerfiles/docker-anaconda-opencv/app:/app docker-anaconda-opencv python /app/FaceDetect/face_detect.py /app/FaceDetect/clapton.jpg
